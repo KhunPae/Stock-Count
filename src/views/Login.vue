@@ -3,8 +3,17 @@
     class="flex justify-center items-center h-screen bg-cover bg-center"
     style="background-image: url('/public/Login.jpg')"
   >
-    <div class="backdrop-blur-sm md:backdrop-blur-lg p-8 rounded shadow w-full max-w-sm">
-      <h1 class="font-mali text-2xl font-bold mb-8 text-center bg-white-500 shadow-lg  text-white rounded-full">เข้าสู่ระบบ</h1>
+    <div
+      class="backdrop-blur-sm md:backdrop-blur-lg p-8 rounded shadow w-full max-w-sm"
+    >
+      <div class="flex justify-center mb-6">
+        <img :src="stockCountLogo" alt="Stock Count Logo" class="brightness-125 w-48 h-auto" />
+      </div>
+      <h1
+        class="font-mali text-2xl font-bold mb-8 text-center bg-white-500 shadow-lg text-blue-800 rounded-full"
+      >
+        User Login
+      </h1>
 
       <input
         v-model="username"
@@ -47,6 +56,7 @@
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import stockCountLogo from "../assets/logo.png";
 
 const username = ref("");
 const password = ref("");
