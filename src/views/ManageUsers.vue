@@ -9,7 +9,7 @@
       <!-- ปุ่ม Back -->
       <button
         @click="backToLogin"
-        class="bg-gray-500 text-white text-sm px-3 py-1.5 rounded hover:bg-gray-600 self-start mb-4"
+        class="bg-gray-500 font-mali text-white text-sm px-3 py-1.5 rounded hover:bg-gray-600 self-start mb-4"
       >
         ← Back to Login
       </button>
@@ -32,7 +32,7 @@
         />
         <button
           @click="addUser"
-          class="bg-green-500 text-white px-6 py-3 text-lg rounded-full hover:bg-green-600 w-full"
+          class="bg-green-500 font-mali text-white px-6 py-3 text-lg rounded-full hover:bg-green-600 w-full"
         >
           เพิ่มพนักงาน
         </button>

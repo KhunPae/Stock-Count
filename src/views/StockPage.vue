@@ -7,7 +7,7 @@
   />
 
   <div class="p-6">
-    <h2 class="text-lg font-bold mb-4">📦 รายการสินค้า</h2>
+    <h2 class="font-mali text-2xl font-bold mb-4">📦 รายการสินค้า</h2>
 
     <button
       @click="startAdd"

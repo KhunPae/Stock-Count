@@ -7,7 +7,11 @@
       class="backdrop-blur-sm md:backdrop-blur-lg p-8 rounded shadow w-full max-w-sm"
     >
       <div class="flex justify-center mb-6">
-        <img :src="stockCountLogo" alt="Stock Count Logo" class="brightness-125 w-48 h-auto" />
+        <img
+          :src="stockCountLogo"
+          alt="Stock Count Logo"
+          class="brightness-125 w-48 h-auto"
+        />
       </div>
       <h1
         class="font-mali text-2xl font-bold mb-8 text-center bg-white-500 shadow-lg text-blue-800 rounded-full"
@@ -32,9 +36,13 @@
         />
         <span
           @click="showPassword = !showPassword"
-          class="absolute right-3 top-3 cursor-pointer text-gray-500 select-none"
+          class="absolute right-3 top-3 cursor-pointer text-gray-500 hover:text-gray-700"
         >
-          {{ showPassword ? "🙈" : "👁️" }}
+          <component
+            :is="showPassword ? EyeSlashIcon : EyeIcon"
+            class="w-5 h-5"
+            :key="showPassword"
+          />
         </span>
       </div>
 
@@ -57,6 +65,7 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import stockCountLogo from "../assets/logo.png";
+import { EyeIcon, EyeSlashIcon } from "@heroicons/vue/24/outline";
 
 const username = ref("");
 const password = ref("");

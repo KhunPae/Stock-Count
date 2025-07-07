@@ -7,7 +7,7 @@
       @manage-users="goManageUsers"
     />
 
-    <h2 class="text-2xl font-bold mb-4">หน้าขายสินค้า</h2>
+    <h2 class="font-mali text-2xl font-bold mb-4">หน้าขายสินค้า</h2>
     <!-- ช่องรับ barcode -->
     <input
       ref="barcodeInput"
